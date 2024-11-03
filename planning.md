@@ -30,10 +30,12 @@ _id|date|comment
 Need to decide what I want to choose to read
 - pull ups
 - pull ups + weight
+- neutral
 - muscle up
 - handstand pushups
 - handstand pushups wall
+- handstand
 - chin up
-- dips
+- dips + weight
 - przysiad
 
