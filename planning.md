@@ -5,3 +5,35 @@ Right now I need to start using the app and if there is something that I need an
 # Upload my old notes to the app
 In the app there's an option to restore data from backup. Backup is in sqlite3 format. In order to automatically upload my data to app I need to create a database file from my old notes.
 First I need to fill in couple of workouts to see how the database with my inputs look like. Then I need to write python script that will convert my old notes into database.
+## tasks
+1. Get all rows from the DB that constitute one workout
+
+## DB analysis
+training_log table has all exersizes. Columns:
+_id|exercise_id|date|metric_weight|reps|unit|routine_section_exercise_set_id|timer_auto_start|is_personal_record|is_personal_record_first|is_complete|is_pending_update|distance|duration_seconds
+
+This is 3 sets of handstand pushups
+11|100|2024-10-21|0|5|0|0|0|0|0|0|0|0|0
+12|100|2024-10-21|0|6|0|0|0|0|0|0|0|0|0
+13|100|2024-10-21|0|5|0|0|0|0|0|0|0|0|0
+
+sqlite> select * from WorkoutComment;
+_id|date|comment
+1|2024-10-25|Kangur - Two failed 50kg pull ups
+2|2024-10-26|Hoża z randomami
+3|2024-10-27|Drążki
+4|2024-10-23|Murall
+5|2024-10-22|Hoża ze znajomymi
+6|2024-10-21|Kangur
+
+## old file transformation
+Need to decide what I want to choose to read
+- pull ups
+- pull ups + weight
+- muscle up
+- handstand pushups
+- handstand pushups wall
+- chin up
+- dips
+- przysiad
+
