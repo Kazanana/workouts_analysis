@@ -26,6 +26,12 @@ _id|date|comment
 5|2024-10-22|Hoża ze znajomymi
 6|2024-10-21|Kangur
 
+List of tables to make entries:
+- WorkoutComment,
+- exercise,
+- training_log,
+- Category,
+
 ## old file transformation
 Need to decide what I want to choose to read
 - pull ups
@@ -38,4 +44,3 @@ Need to decide what I want to choose to read
 - chin up
 - dips + weight
 - przysiad
-
