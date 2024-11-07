@@ -31,7 +31,26 @@ List of tables to make entries:
 - exercise,
 - training_log,
 - Category,
+I think that after exporting existing app state there will only be a need to update training_log and WorkoutComment
 
+Inserting 69 reps of excercise of id 100 on a given data
+``` sql
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(100,'2024-11-01',69,0);
+```
+map a exercise id from another table using name
+```sql
+select _id from exercise
+where name like 'Handstand Pushups'
+```
+combine
+```sql
+insert into training_log (exercise_id,date,reps,metric_weight)
+values((select _id from exercise
+where name like 'Handstand Pushups'),
+'2024-11-02',69,0);
+```
+Do this query for each excercise
 ## old file transformation
 Need to decide what I want to choose to read
 - pull ups
