@@ -5,8 +5,13 @@ Right now I need to start using the app and if there is something that I need an
 # Upload my old notes to the app
 In the app there's an option to restore data from backup. Backup is in sqlite3 format. In order to automatically upload my data to app I need to create a database file from my old notes.
 First I need to fill in couple of workouts to see how the database with my inputs look like. Then I need to write python script that will convert my old notes into database.
+
+Not convert them into database but make inserts into backup file.
+
 ## tasks
 1. Get all rows from the DB that constitute one workout
+2. Based on 1. convert 1 workout from old notes into a series of inserts
+3. 
 
 ## DB analysis
 training_log table has all exersizes. Columns:
@@ -28,10 +33,8 @@ _id|date|comment
 
 List of tables to make entries:
 - WorkoutComment,
-- exercise,
 - training_log,
-- Category,
-I think that after exporting existing app state there will only be a need to update training_log and WorkoutComment
+
 
 Inserting 69 reps of excercise of id 100 on a given data
 ``` sql
@@ -53,13 +56,36 @@ where name like 'Handstand Pushups'),
 Do this query for each excercise
 ## old file transformation
 Need to decide what I want to choose to read
-- pull ups
-- pull ups + weight
-- neutral
-- muscle up
-- handstand pushups
-- handstand pushups wall
-- handstand
-- chin up
-- dips + weight
-- przysiad
+- pull ups (Pull up)
+- pull ups + weight (Pull Up)
+- neutral (Neutral Chin Up)
+- muscle up (add Muscle Up into db)
+- handstand pushups (Handstand Pushup)
+- handstand pushups wall (Handstand Pushup Wall)
+- handstand (Handstand)
+- chin up (Chin Up)
+- dips + weight (Chest Dip)
+- przysiad (Barbell Squat)
+
+## Info reagrding inserts into training_log table
+cid|name|type|notnull|dflt_value|pk
+0|_id|INTEGER|0||1
+1|exercise_id|INTEGER|1||0
+2|date|DATE|1||0
+3|metric_weight|INTEGER|1||0
+4|reps|INTEGER|1||0
+5|unit|INTEGER|1|0|0
+6|routine_section_exercise_set_id|INTEGER|1|0|0
+7|timer_auto_start|INTEGER|1|0|0
+8|is_personal_record|INTEGER|1|0|0
+9|is_personal_record_first|INTEGER|1|0|0
+10|is_complete|INTEGER|1|0|0
+11|is_pending_update|INTEGER|1|0|0
+12|distance|INTEGER|1|0|0
+13|duration_seconds|INTEGER|1|0|0
+### Pull Up
+exercise_id -> 49
+
+metric_weight -> 0 or specified value
+
+
