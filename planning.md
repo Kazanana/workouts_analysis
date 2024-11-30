@@ -11,7 +11,8 @@ Not convert them into database but make inserts into backup file.
 ## tasks
 1. Get all rows from the DB that constitute one workout
 2. Based on 1. convert 1 workout from old notes into a series of inserts
-3. 
+3. Do it in a loop for every workout in the old notes
+4. Test if updated DB file works in the App
 
 ## DB analysis
 training_log table has all exersizes. Columns:
@@ -68,6 +69,8 @@ Need to decide what I want to choose to read
 - przysiad (Barbell Squat)
 
 ## Info reagrding inserts into training_log table
+training_log table schema:
+
 cid|name|type|notnull|dflt_value|pk
 0|_id|INTEGER|0||1
 1|exercise_id|INTEGER|1||0
@@ -83,9 +86,33 @@ cid|name|type|notnull|dflt_value|pk
 11|is_pending_update|INTEGER|1|0|0
 12|distance|INTEGER|1|0|0
 13|duration_seconds|INTEGER|1|0|0
+### Workout comment
+insert into WorkoutComment (date,comment)
+values({date},{comment});
 ### Pull Up
-exercise_id -> 49
-
-metric_weight -> 0 or specified value
-
-
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(49,{date},{reps},{weight});
+### Neutral Chin Up
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(51,{date},{reps},{weight});
+### Chin Up
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(50,{date},{reps},{weight});
+### Muscle Up
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(toBeSeen,{date},{reps},{weight});
+### Handstand Pushup
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(108,{date},{reps},{weight});
+### Handstand Pushup Wall
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(100,{date},{reps},{weight});
+### Handstand
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(111,{date},{reps},{weight});
+### Handstand
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(103,{date},{reps},{weight});
+### Handstand
+insert into training_log (exercise_id,date,reps,metric_weight)
+values(64,{date},{reps},{weight});
