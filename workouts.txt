@@ -326,7 +326,7 @@ Kettle
 29.01.2024 drążki
 Runmageddon zaprawa
 27.01.2024 murall
-Pull up: 30x5, 30x5.5, 30x4
+Pull up: 30x5, 30x6, 30x4
 23.01.2024 kangur
 HS Pu:3, 5, 4, 5
 Dipy:16x12, 16x10, 16x10
@@ -377,7 +377,7 @@ Dipy:16x10,16x10,16x10
 neutral: 16x5, 16x5, 16x5
 09.12.2023 wlb
 06.12.2023 murall
-Pull up:35x4, 40x2.5, 40x2.5
+Pull up:35x4, 40x3, 40x3
 04.12.2023 kangur
 HS Pu:2, 6, 5
 Dipy:10, 10, 10
@@ -392,7 +392,7 @@ HS Pu: 1, 4, 6
 Przysiady: 70x5, 80x5, 80x4
 Dipy: 50x4, 50x4, 50x4
 22.11.2023 murall
-Pull up: 35x4, 40x2,  40x2.5
+Pull up: 35x4, 40x2,  40x3
 20.11.2023 kangur
 HS Pu: 2, 4, 5
 Dipy:16x8, 16x10, 16x10
@@ -422,7 +422,7 @@ Squat:70x5, 80x4, 80x4
 pull ups: 5
 +DF
 08.11.2023 murall
-Pull up: 35x4, 40x3, 40x2.5
+Pull up: 35x4, 40x3, 40x3
 04.11.2023 muralla
 Pull up: 35x4, 40x3, 40x2
 Wspinanie lina
@@ -440,7 +440,7 @@ HS Pu:2, 4, 2, 3
 Dipy:14, 16, 20x8
 Chin upy:7, 8, 20x4
 28.10.2023 murall
-Pull up: 35x3.5, 40x2, 40x2,
+Pull up: 35x4, 40x2, 40x2,
 Dipy: 50x4, 50x5, 50x4
 Wspinanie Lina
 Przysiady: 70x5, 80x4, 90x2, 95x1
@@ -480,7 +480,7 @@ Chin upy:7, 8, 7
 Dipy:14, 14, 14
 chin upy:7, 7, 7
 05.10.2023 murall
-Pull up: 35x3, 40x2, 45x1, 50x0.9
+Pull up: 35x3, 40x2, 45x1, 50x1
 Przysiad:70x4, 80x4, 85x2
 Dipy: 25x5, 50x4, 65x1, 65x1
 04.10.2023 drążki
@@ -513,7 +513,7 @@ HS Pu: 3, 4, 6, 6
 Dipy: 13, 13, 12
 wąskie chin upy: 6, 6, 6
 18.09.2023 murall
-Pull up: 35x3, 35x3.5, 35x3
+Pull up: 35x3, 35x4, 35x3
 HS Pu: 2
 Przysiady:70x4, 80x4, 85x2
 Dipy:45x5, 45x4, 45x4
@@ -544,7 +544,7 @@ Wprawki flaga
 Dipy: 12, 12, 12
 wąskie chin upy:6, 6, 6
 30.08.2023 murall
-Pull up: 35x3, 35x3, 35x2.5
+Pull up: 35x3, 35x3, 35x3
 +Chwytotablica
 Dipy:32x7, 32x8, 32x7
 Przysiady: 70x4, 80x2, 80x2
@@ -587,7 +587,7 @@ Wprawki flaga
 Dipy:12, 12, 10
 pull up:6, 6, 5
 02.08.2023 murall
-Pull up: 35x3, 35x3.5, 35x3
+Pull up: 35x3, 35x4, 35x3
 Dipy:32x5, 32x6, 32x5
 31.07.2023 drążki
 HS Pu: 1, 2, 3, 4, 4, 3
@@ -614,7 +614,7 @@ Hollow body
 23.07.2023 murall
 21.07.2023 murall
 19.07.2023 murall
-Pull up: 32x4, 40x1.5, 44x1, 40x1
+Pull up: 32x4, 40x2, 44x1, 40x1
 Dipy:24x8, 24x7, 24x7
 17.07.2023
 HS Pu:3,
@@ -706,7 +706,7 @@ Dipy:10, 12, 12
 +DF
 chin up: 12
 31.05.2023 obiekto
-Pull up: 20x4, 30x3, 40x1.5, 42.5x1, 42.5x1, 35x2, 35x2
+Pull up: 20x4, 30x3, 40x2, 42.5x1, 42.5x1, 35x2, 35x2
 Przysiad: 60x5, 70x4, 80x2, 82.5x2
 29.05.2023 drążki
 HS Pu: 2, 4, 5, 5, 3,
@@ -741,7 +741,7 @@ Wprawki flaga
 Dips:8, 10
 pullupy:6, 6
 17.05.2023 obiekto
-Pull up: 20x5, 20x5.5, 20x
+Pull up: 20x5, 20x6, 20x
 11.05.2023 obiekto
 Pull up: 20x5, 20x5, 20x5, 20x5
 08.05.2023 drążki
@@ -781,7 +781,7 @@ df 1 noga
 19.04.2023 obiekto
 Pull up:16x5, 16x5, 16x4
 06.04.2023 obiekto
-Pull up: 20x3, 25x2, 30x1, 40x0.8,40x0.8, 35x1
+Pull up: 20x3, 25x2, 30x1, 40x1, 40x1, 35x1
 01.04.2023 obiekto
 Pull up:16x5, 16x5, 16x5, 16x5
 29.03.2023 obiekto
