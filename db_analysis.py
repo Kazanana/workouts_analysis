@@ -1,7 +1,7 @@
 import sqlite3
 
 # Specify your database file
-db_path = "FitNotes_Backup_30-11-2024.fitnotes"
+db_path = "FitNotes_Backup_2024_11_30_20_44_12.fitnotes"
 date_to_find = "2024-11-18"
 
 # Connect to the database
