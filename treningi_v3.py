@@ -1,5 +1,5 @@
 import re
-
+# separation into sigle workouts using regex was done using ChatGPT
 def split_workouts(file_path):
     with open(file_path, 'r') as file:
         content = file.read()

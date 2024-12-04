@@ -69,50 +69,54 @@ Need to decide what I want to choose to read
 - przysiad (Barbell Squat)
 
 ## Info reagrding inserts into training_log table
-training_log table schema:
 
-cid|name|type|notnull|dflt_value|pk
-0|_id|INTEGER|0||1
-1|exercise_id|INTEGER|1||0
-2|date|DATE|1||0
-3|metric_weight|INTEGER|1||0
-4|reps|INTEGER|1||0
-5|unit|INTEGER|1|0|0
-6|routine_section_exercise_set_id|INTEGER|1|0|0
-7|timer_auto_start|INTEGER|1|0|0
-8|is_personal_record|INTEGER|1|0|0
-9|is_personal_record_first|INTEGER|1|0|0
-10|is_complete|INTEGER|1|0|0
-11|is_pending_update|INTEGER|1|0|0
-12|distance|INTEGER|1|0|0
-13|duration_seconds|INTEGER|1|0|0
 ### Workout comment
+```sql
 insert into WorkoutComment (date,comment)
 values({date},{comment});
+```
 ### Pull Up
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(49,{date},{reps},{weight});
+```
 ### Neutral Chin Up
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(51,{date},{reps},{weight});
+```
 ### Chin Up
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(50,{date},{reps},{weight});
+```
 ### Muscle Up
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(toBeSeen,{date},{reps},{weight});
+```
 ### Handstand Pushup
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(108,{date},{reps},{weight});
+```
 ### Handstand Pushup Wall
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(100,{date},{reps},{weight});
+```
 ### Handstand
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(111,{date},{reps},{weight});
+```
 ### Handstand
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(103,{date},{reps},{weight});
+```
 ### Handstand
+```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(64,{date},{reps},{weight});
+```
