@@ -19,6 +19,22 @@ def split_workouts(file_path):
     
     return entries
 
+def insert_WorkoutComment(date,place):
+
+    query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?)"
+    data = (date, place)
+    cursor.execute(query, data)
+    conn.commit()
+
+def insert_training_log(exercise_name,date,reps,weight):
+    # reps and weight
+    cursor.execute(f"select _id from exercise where name like '{exercise_name}';")
+    exercise_id = cursor.fetchall()
+    query = "insert into training_log (exercise_id,date,reps,metric_weight) values(?,?,?,?);"
+    data = (exercise_id, date, reps, weight)
+    cursor.execute(query, data)
+    conn.commit()
+
 file_path = 'workouts.txt'
 exercise_entries = split_workouts(file_path)
 
@@ -32,16 +48,16 @@ for entry in exercise_entries:
     exercises = entry.splitlines()[1:]
 
     date = date_and_place.split(' ', 1)[0]
-    place = date_and_place.split(' ', 1)[1]
-    
     date = date.replace('.','-')
     date = datetime.strptime(date, "%d-%m-%Y").strftime("%Y-%m-%d")
-    # # inserting workout comment
-    # query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?)"
-    # data = (date, place)
 
-    # cursor.execute(query, data)
-    # conn.commit()
-    # # print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
+    place = date_and_place.split(' ', 1)[1]
+    print(date)
+    for ex in exercises:
+        print(ex)
+    print("-----------")
+    # insert_WorkoutComment(date, place)
+    # print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
+
     
 conn.close()
