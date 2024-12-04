@@ -10,6 +10,7 @@ Not convert them into database but make inserts into backup file.
 
 ## tasks
 1. Get all rows from the DB that constitute one workout
+1.a. Clean up data eg. Pull upy, Pull ups 
 2. Based on 1. convert 1 workout from old notes into a series of inserts
 3. Do it in a loop for every workout in the old notes
 4. Test if updated DB file works in the App
@@ -37,7 +38,7 @@ List of tables to make entries:
 - training_log,
 
 
-Inserting 69 reps of excercise of id 100 on a given data
+Inserting 69 reps of excercise of id 100 on a given date
 ``` sql
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(100,'2024-11-01',69,0);
@@ -108,15 +109,5 @@ values(100,{date},{reps},{weight});
 ### Handstand
 ```sql
 insert into training_log (exercise_id,date,reps,metric_weight)
-values(111,{date},{reps},{weight});
-```
-### Handstand
-```sql
-insert into training_log (exercise_id,date,reps,metric_weight)
-values(103,{date},{reps},{weight});
-```
-### Handstand
-```sql
-insert into training_log (exercise_id,date,reps,metric_weight)
-values(64,{date},{reps},{weight});
+values(111,{date},{reps},{time});
 ```
