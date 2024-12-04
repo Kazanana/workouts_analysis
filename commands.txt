@@ -1,0 +1,4 @@
+# reset DB
+cd repos/workouts_analysis
+rm FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes
+cp FitNotes_Backup_2024_11_30_20_44_12.fitnotes FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes

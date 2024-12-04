@@ -1,4 +1,6 @@
 import re
+from datetime import datetime
+import sqlite3
 # separation into sigle workouts using regex was done using ChatGPT
 def split_workouts(file_path):
     with open(file_path, 'r') as file:
@@ -20,7 +22,26 @@ def split_workouts(file_path):
 file_path = 'workouts.txt'
 exercise_entries = split_workouts(file_path)
 
-# Print or use the split entries as needed
+db_path = "FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes"
+conn = sqlite3.connect(db_path)
+cursor = conn.cursor()
+
 for entry in exercise_entries:
-    print(entry)
-    print("------------")
+    # need to split like that because entry is a string
+    date_and_place = entry.splitlines()[0]
+    exercises = entry.splitlines()[1:]
+
+    date = date_and_place.split(' ', 1)[0]
+    place = date_and_place.split(' ', 1)[1]
+    
+    date = date.replace('.','-')
+    date = datetime.strptime(date, "%d-%m-%Y").strftime("%Y-%m-%d")
+    # # inserting workout comment
+    # query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?)"
+    # data = (date, place)
+
+    # cursor.execute(query, data)
+    # conn.commit()
+    # # print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
+    
+conn.close()
