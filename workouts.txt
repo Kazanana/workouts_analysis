@@ -6,11 +6,11 @@ One arm active hang: 3
 Wspin boulder
 27.10.2024 drążki
 Dipy:14, 14
-pull ups:7, 6
+pull up:7, 6
 26.10.2024 siatka
 25.10.2024 kangur
 Hs pu:2, 1
-Pull up:20x3, 40x2, failed 50x1, failed 50x1, 13
+Pull up:20x3, 40x2, 50x1, 50x1, 0x13
 Dipy:40x4, 60x1
 23.10.2024 murall
 Wspin lina
@@ -56,7 +56,7 @@ Wspin boulder
 01.10.2024 siatka
 30.09.2024 kangur
 Hs pu ściana:4, 4, 4
-Pull up neutral: 10x5, 10x5, 10x5
+neutral: 10x5, 10x5, 10x5
 Squat: 60x5, 60x6, 60x5
 25.09.2024 drążki
 Hs pu: 1, 2, 3
@@ -90,7 +90,7 @@ Chwytotablica 14kg: 3, 4, 3
 Wspin boulder
 Hs pu: 1, 2
 30.08.2024
-Hs pu: 1, 1, 2,
+Hs pu: 1, 1, 2
 Circuit (łydki core)
 28.08.2024 murall
 Chwytotablica 14kg: 4, 3
@@ -98,13 +98,14 @@ Wspin lina
 27.08.2024 drążki
 Hs pu: 2, 3, 3
 Muscle up: 2, 4, 3
-Neutral dipy: 6/12, 6/12, 6/12
+Neutral:6, 6, 6
+dipy:12, 12, 12
 26.08.2024
-Hs pu: 2, 4, 4.5
+Hs pu: 2, 4, 5
 Circuit (łydki core)
 24.08.2024 murall
 Hs pu: 3, 4, 1
-Dipy 20kg: 7, 8, 8
+Dipy: 20x7, 20x8, 20x8
 21.08.2024 Włochy
 Świrowanie
 17.08.2024 Włochy
@@ -120,7 +121,7 @@ dip:10x8, 10x8, 10x8
 07.08.2024
 Wspin boulder
 05.08.2024
-Hs pu:1, 3, 3, 1, 1,
+Hs pu:1, 3, 3, 1, 1
 Core + łydka
 03.08.2024 murall
 Wspin boulder
@@ -162,21 +163,20 @@ Wspin boulder
 Hs pu:2, 3, 3, 2
 Muscle up:4, 3, 3
 Chin ups:8, 8, 8
-dips:16, 16, 16
+dip:16, 16, 16
 10.07.2024 murall
 Chwytotablica 12kg: 4, 4, 4
 Wspin boulder
 08.07.2024 drążki
 Hs pu:1, 3, 3, 1
 Hs pu ściana: 4, 5, 4
-Muscle up guma:4,
 Muscle up:3, 4, 3
 06.07.2024 murall
 Chwytotablica 12kg: 4, 4, 4
 Wspin lina
-Dipy 24kg: 8, 8, 8
+Dipy: 24x8, 24x8, 24x8
 04.07.2024 drążki
-Hs pu:1, 2.5, 2,
+Hs pu:1, 3, 2
 Hs pu ściana:5, 5, 4
 Pull up:5, 5, 5
 dip:10, 10, 10
@@ -239,7 +239,7 @@ Neutral:8
 dipy:14
 25.05.2024 murall
 Chwytotablica 20mm : 12x10s, 12x12s
-pull up: 12x5, 20x5,
+pull up: 12x5, 20x5
 Wspin lina
 Dipy: 20x8, 30x8, 30x8
 +DF
@@ -299,7 +299,7 @@ Wspin boulder
 12.03.2024 kangur
 HS Pu ściana: 4, 5, 4
 Pull up:8, 8
-dip:0, 10
+dip:10, 10
 09.03.2024 murall
 Wspin lina
 05.03.2024 kangur
@@ -344,8 +344,8 @@ machine row: 80x8, 80x10, 80x10, 80x8
 Dumbbell overhead press: 20x6, 20x7, 20x6
 08.01.2024 kangur
 HS Pu:1, 5, 4, 6
-Dipy
-neutral 16:10/5, 12/6, 10/5
+Dipy:16x10, 16x12, 16x10
+neutral :16x5, 16x6, 16x5
 06.01.2024 murall
 Pull up: 30x4, 40x2, 50x1
 03.01.2024 kangur
@@ -419,14 +419,14 @@ HS Pu:2, 4, 5, 1
 Dip:16x8, 16x10, 16x8
 neutral:16x4, 16x5, 16x4
 Squat:70x5, 80x4, 80x4
-pull ups: 5
+pull up: 5
 +DF
 08.11.2023 murall
 Pull up: 35x4, 40x3, 40x3
 04.11.2023 muralla
 Pull up: 35x4, 40x3, 40x2
 Wspinanie lina
-Przysiady:80x4, 85x3, 90x2,
+Przysiady:80x4, 85x3, 90x2
 03.11.2023 siłka Q22
 HS Pu: 3, 5, 5, 5 , 3
 Dipy:14, 18, 16
@@ -437,10 +437,10 @@ HS Pu: 3, 5, 3
 Pull up: 35x4, 40x3, 40x2
 30.10.2023 drążki
 HS Pu:2, 4, 2, 3
-Dipy:14, 16, 20x8
-Chin upy:7, 8, 20x4
+Dipy:0x14, 0x16, 20x8
+Chin upy:0x7, 0x8, 20x4
 28.10.2023 murall
-Pull up: 35x4, 40x2, 40x2,
+Pull up: 35x4, 40x2, 40x2
 Dipy: 50x4, 50x5, 50x4
 Wspinanie Lina
 Przysiady: 70x5, 80x4, 90x2, 95x1
@@ -454,7 +454,7 @@ Pull up: 35x4, 40x2, 40x2
 21.10.2023 murall
 Wspinanie Lina
 19.10.2023 drążki
-HS Pu: 2, 4, 3.5, 4
+HS Pu: 2, 4, 4, 4
 Dipy:14, 16, 14
 chinupy: 7, 8, 7
 18.10.2023 murall
@@ -487,17 +487,17 @@ Dipy: 25x5, 50x4, 65x1, 65x1
 Dipy:14, 14, 14
 Chin upy: 7, 7, 7
 02.10.2023 drążki
-HS Pu:4, 5.5, 3, 3
+HS Pu:4, 6, 3, 3
 Dipy:14, 14, 14
 chin ups:7, 7, 7
 27.09.2023 murall
-Pull ups: 15
+Pull up: 15
 Dipy: 25
 Chin ups:14
 Ohp: 50x7, 40x12
 Pompki: 30
 25.09.2023 drążki
-HS Pu: 6.5, 4, 6, 3
+HS Pu: 7, 4, 6, 3
 Muscle up: 4, 4
 Dipy: 14, 14, 14
 wąskie chin upy:7, 7, 7
@@ -507,7 +507,7 @@ HS Pu : 4, 3, 3
 21.09.2023 murall
 Pull up: 35x3, 35x3, 35x3
 Przysiady: 70x4, 80x3, 80x3
-Dipy: 40x4, 40x4,
+Dipy: 40x4, 40x4
 20.09.2023 drążki
 HS Pu: 3, 4, 6, 6
 Dipy: 13, 13, 12
@@ -539,7 +539,7 @@ Wspinanie Lina
 Przysiady: 70x5, 80x3, 80x2
 Dipy: 40x5, 40x5, 40x5
 01.09.2023 drążki
-HS Pu:2.5, 5, 5, 4.5
+HS Pu:3, 5, 5, 5
 Wprawki flaga
 Dipy: 12, 12, 12
 wąskie chin upy:6, 6, 6
@@ -564,7 +564,7 @@ chin up:7, 6, 6
 HS Pu:1, 4, 4
 Pull up:25x4, 35x3, 35x3
 Wspinanie Lina
-Przysiady:60x5, 70x4, 80x2,
+Przysiady:60x5, 70x4, 80x2
 Dipy:32x6, 32x7, 32x6
 14.08.2023 drążki
 Dipy: 14, 14, 14
@@ -582,7 +582,7 @@ pull up:6, 8, 6
 Dead hang/przysiady
 05.08.2023 murall
 04.08.2023 drążki
-HS Pu:1.5, 3, 5, 2
+HS Pu:2, 3, 5, 2
 Wprawki flaga
 Dipy:12, 12, 10
 pull up:6, 6, 5
@@ -606,7 +606,7 @@ Core
 26.07.2023 murall
 Pierwszy pomarańczowy bald
 Pull up: 25x4, 35x3, 35x3, 35x3
-Dipy: 32x5, 32x5,
+Dipy: 32x5, 32x5
 24.07.2023
 HS Pu:2, 3, 5, 4, 3
 Wąskie:20, 18, 16
@@ -617,9 +617,9 @@ Hollow body
 Pull up: 32x4, 40x2, 44x1, 40x1
 Dipy:24x8, 24x7, 24x7
 17.07.2023
-HS Pu:3,
+HS Pu:3
 HS Pu ściana:5, 6, 5
-HS hold:
+HS hold
 Brzuch
 15.07.2023 drążki
 Pull up: 32x3, 32x4, 32x4
@@ -633,7 +633,7 @@ pull up:7, 6, 6
 Pull up: 32x3, 32x4, 32x4
 07.07.2023 murall
 Pull up: 32x3, 32x4, 32x4
-Dipy: 24x6, 24x8,
+Dipy: 24x6, 24x8
 06.07.2023 drążki
 HS Pu:2, 4, 4, 2
 Wprawki flaga
@@ -651,7 +651,7 @@ Dip:13, 12, 12
 25.06.2023 murall
 Pull up: 24x4, 32x3, 32x3, 32x3
 23.06.2023 obiektów
-Przysiady: 60x5, 70x3,
+Przysiady: 60x5, 70x3
 22.06.2023 drążki
 HS Pu: 2, 3, 2
 Dipy:12, 13, 12
@@ -681,7 +681,7 @@ Dipy:10, 12, 12
 pull up:6, 6, 6
 +DF
 09.06.2023 drążki
-HS Pu: 3, 5, 4.5, 4
+HS Pu: 3, 5, 5, 4
 Wprawki flaga
 Oa push up PL: 4, 4
 Dipy:10, 13, 11
@@ -694,7 +694,7 @@ Pull up: 24x4, 32x3, 36x2, 36x2, 36x2
 Przysiady:60x5, 70x4, 80x3, 82.5x2
 +biceps 20
 05.06.2023 drążki
-HS Pu:3, 3, 4.5, 4
+HS Pu:3, 3, 5, 4
 Wprawki flaga
 Oa push up PL: 5, 7, 5
 Dipy:12, 12
@@ -709,16 +709,16 @@ chin up: 12
 Pull up: 20x4, 30x3, 40x2, 42.5x1, 42.5x1, 35x2, 35x2
 Przysiad: 60x5, 70x4, 80x2, 82.5x2
 29.05.2023 drążki
-HS Pu: 2, 4, 5, 5, 3,
+HS Pu: 2, 4, 5, 5, 3
 Wprawki flaga
-Sprawdzenie maxow pull up:14
+pull up:14
 Dipy:8, 22, 16
 +DF
 26.05.2023 drążki
 HS Pu: 2, 5, 3, 4
 Wprawki flaga
 One arm push up PL: 5, 6, 5
-Muscle up:4,
+Muscle up:4
 Dipy: 11, 10, 10
 +DF
 Biceps + brzuch
@@ -738,7 +738,7 @@ Na biceps hantel
 19.05.2023 drążki
 HS Pu: 1, 1, 3, 1, 4, 4
 Wprawki flaga
-Dips:8, 10
+Dip:8, 10
 pullupy:6, 6
 17.05.2023 obiekto
 Pull up: 20x5, 20x6, 20x
@@ -760,11 +760,10 @@ Dipy: 10, 10, 10
 + df
 03.05.2023 obiekto
 Pull up: 20x5, 20x5, 20x5
-Przysiad: 20x4, 40x5, 60x5, 70x4, 70x4,
+Przysiad: 20x4, 40x5, 60x5, 70x4, 70x4
 01.05.2023 drążki
-HS Pu: 2, 3, 3.5, 4, 2
-Rozgrzewkowe pull upy:3,
-Pull up: 13
+HS Pu: 2, 3, 4, 4, 2
+Pull up: 3, 13
 Ring muscle up:2, 2, 1
 ring dips: 3, 3, 4
 29.04.2023 obiekto
@@ -793,14 +792,14 @@ Pull up: 16x4, 16x5, 16x5, 16x4
 HS push up: 1, 2
 10.03.2023 mural
 Pull up: 16x3, 16x5, 16x5, 16x4
-HS push up: 1, 3.5, 3
+HS push up: 1, 4, 3
 02.03.2023 Obiekto
 Pull up: 16x4, 16x5, 16x4
 13.01.2023 Obiekto
-DF + ring dips X 3
+DF + ring dips: 3
 06.01.2023 Obiekto
 Pull up: 11
-DF + ring dips i hold x 4
+DF + ring dips i hold: 4
 17.11.2022
 Pull up:3, 7, 10, 6, 6, 12
 16.11.2022
@@ -827,14 +826,14 @@ FL 1 noga guma:15s, 12s,10s
 HS
 DF
 10.10.2022 camp
-FL 1 noga guma: 10s,
+FL 1 noga guma: 10s
 26.09.2022
 23.09.2022 camp
 Full FL gruba guma nogi: 3x10s
-HS push up:1,
+HS push up:1
 21.09.2022 drążki
 Pull up: 10, 8, 7
-Dip:8, 8,
+Dip:8, 8
 19.09.2022 drążki
 FL 1 noga: 12s, 10s, 10s
 HS push up ściana: 5, 6, 4
@@ -845,7 +844,7 @@ chin up:6, 6, 6, 6
 FL 1 noga guma: 9s, 10s, 11s, 10s
 HS push up ściana: 5, 6, 5
 06.09.2022 drążki
-Adv tuck FL: 17s,
+Adv tuck FL: 17s
 1 noga guma 10 s
 Tak samo
 Tak samo
@@ -860,7 +859,7 @@ HS pu: 2, 1
 HS pu ściana: 3, 4, 4
 DF
 15.08.2022 drążki
-FL adv tuck: 13s, 14s, 12s,
+FL adv tuck: 13s, 14s, 12s
 Muscle up: 3, 3, 3
 12.08 camp
 Pull up: 9, 9, 8
@@ -870,19 +869,21 @@ Pull up: 8, 7, 7
 05.08.2022 camp
 Push up 1 ręka: LP3, LP3, LP3
 03.08.2022 drążki
-HS pu: 1,
+HS pu: 1
 Muscle up:2, 4, 3, 3
 Dip:10, 11, 10
 + DF
-Chinup wąski:7, 6,
+Chinup wąski:7, 6
 29.07.2022 camp
-HS push up: 2, 2, 3.5,
+HS push up: 2, 2, 4
 Muscle up: 3,3,3
 + Brzuch
 25.07.2022 drążki biedra
-Muscle up:3 + dip 8(zwykły), 3 pull up 5 dip 8, -||-
+Muscle up:3, 3, 3
+Pull up: 5, 5
+Dip: 8, 8
 22.07.2022 camp
-HS push up: 2, 3, 3,
+HS push up: 2, 3, 3
 20.07.2022 drążki
 Muscle up:2, 2, 3
 Pull up: 10, 10, 9
