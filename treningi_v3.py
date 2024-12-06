@@ -16,11 +16,11 @@ def split_workouts(file_path):
 
 def insert_WorkoutComment(date,place, dry_run = True):
     if dry_run:
-        query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?)"
+        query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?);"
         data = (date, place)
         print(f"Query: {query}\n Data: {data}")
     else:
-        query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?)"
+        query = "INSERT INTO WorkoutComment (date, comment) VALUES (?, ?);"
         data = (date, place)
         cursor.execute(query, data)
         conn.commit()
@@ -28,14 +28,27 @@ def insert_WorkoutComment(date,place, dry_run = True):
 def insert_training_log(exercise_name,date,reps,weight, dry_run = True):
     # reps and weight
     if dry_run:
-        query = "insert into training_log (exercise_id,date,reps,metric_weight) values(?,?,?,?);"
-        data = (exercise_id, date, reps, weight)
+        query = "INSERT INTO training_log (exercise_id,date,reps,metric_weight) VALUES(?,?,?,?);"
+        data = (exercise_name, date, reps, weight)
         print(f"Query: {query}\n Data: {data}")
     else:
         cursor.execute(f"select _id from exercise where name like '{exercise_name}';")
         exercise_id = cursor.fetchall()
-        query = "insert into training_log (exercise_id,date,reps,metric_weight) values(?,?,?,?);"
+        query = "INSERT INTO training_log (exercise_id,date,reps,metric_weight) VALUES(?,?,?,?);"
         data = (exercise_id, date, reps, weight)
+        cursor.execute(query, data)
+        conn.commit()
+
+def insert_training_log_time(exercise_name, date, duration_seconds, dry_run = True):
+    if dry_run:
+            query = "INSERT INTO training_log (exercise_id,date,duration_seconds) VALUES(?,?,?);"
+            data = (exercise_name, date, duration_seconds)
+            print(f"Query: {query}\n Data: {data}")
+    else:
+        cursor.execute(f"select _id from exercise where name like '{exercise_name}';")
+        exercise_id = cursor.fetchall()
+        query = "INSERT INTO training_log (exercise_id,date,duration_seconds) VALUES(?,?,?);"
+        data = (exercise_id, date, duration_seconds)
         cursor.execute(query, data)
         conn.commit()
 
@@ -60,9 +73,9 @@ def split_sets_into_reps(ex):
 file_path = 'workouts.txt'
 exercise_entries = split_workouts(file_path)
 
-# db_path = "FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes"
-# conn = sqlite3.connect(db_path)
-# cursor = conn.cursor()
+db_path = "FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes"
+conn = sqlite3.connect(db_path)
+cursor = conn.cursor()
 
 exercise_dict = {"exercises": [
     {
@@ -113,15 +126,17 @@ for entry in exercise_entries:
     date = datetime.strptime(date, "%d-%m-%Y").strftime("%Y-%m-%d")
 
     place = date_and_place.split(' ', 1)[1]
-    print(date_and_place)
-    # insert insert_WorkoutComment(data, place)
+    insert_WorkoutComment(date, place)
     for ex in exercises:
         for i in exercise_dict["exercises"]:
             if re.findall(i["regex"],ex):
+                # didnt record duration, time exercises require different insert
                 if i["name"] == "Handstand":
-                    print("HANDSTAND PRACTICE")
+                    insert_training_log_time(i["name"], date, 30)
+                    insert_training_log_time(i["name"], date, 30)
                 else:
-                    print(split_sets_into_reps(ex))
+                    for j in split_sets_into_reps(ex):
+                        insert_training_log(i["name"], j[1], j[2], j[3])
             else:
                 continue
     print("-----------------------------------------------")
@@ -129,4 +144,4 @@ for entry in exercise_entries:
 # print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
 
     
-# conn.close()
+conn.close()
