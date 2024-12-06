@@ -61,7 +61,7 @@ Need to decide what I want to choose to read
 - pull ups (Pull up)
 - pull ups + weight (Pull Up)
 - neutral (Neutral Chin Up)
-- muscle up (add Muscle Up into db)
+- muscle up (add Muscle Up into db)(?)
 - handstand pushups (Handstand Pushup)
 - handstand pushups wall (Handstand Pushup Wall)
 - handstand (Handstand)
@@ -111,3 +111,10 @@ values(100,{date},{reps},{weight});
 insert into training_log (exercise_id,date,reps,metric_weight)
 values(111,{date},{reps},{time});
 ```
+
+## cleaning data
+For handstand when there is hs i line without : then count it as handstand
+HS push up or HS up for Handstand Pushup
+ściana for Handstand Pushup Wall
+dip dipy Dipy Dip for Chest Dips
+Przysiad for Barbell Squat
