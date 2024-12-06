@@ -35,12 +35,30 @@ def insert_training_log(exercise_name,date,reps,weight):
     cursor.execute(query, data)
     conn.commit()
 
+def split_sets_into_reps(ex):
+    sets_list = []
+    name = ex.split(":")[0].strip()
+    sets = ex.split(":")[1].split(",")
+    if ex.find("x") == -1:
+        # no weight
+        for reps in sets:
+            reps = reps.strip()
+            sets_list.append((name, date, reps, 0))
+    else: 
+        # weighted
+        for set in sets:
+            set = set.strip()
+            weight = set.split("x")[0]
+            reps = set.split("x")[1]
+            sets_list.append((name, date, reps, weight))
+    return sets_list
+
 file_path = 'workouts.txt'
 exercise_entries = split_workouts(file_path)
 
-db_path = "FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes"
-conn = sqlite3.connect(db_path)
-cursor = conn.cursor()
+# db_path = "FitNotes_Backup_2024_11_30_20_44_12_TEST.fitnotes"
+# conn = sqlite3.connect(db_path)
+# cursor = conn.cursor()
 
 for entry in exercise_entries:
     # need to split like that because entry is a string
@@ -52,12 +70,17 @@ for entry in exercise_entries:
     date = datetime.strptime(date, "%d-%m-%Y").strftime("%Y-%m-%d")
 
     place = date_and_place.split(' ', 1)[1]
-    print(date)
+    print(date_and_place)
     for ex in exercises:
-        print(ex)
-    print("-----------")
-    # insert_WorkoutComment(date, place)
-    # print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
+        matches_dip = re.findall(r'dip:|Dip:|dipy:|Dipy:', ex)
+        matches_pullup = re.findall(r'Pull up:|pull up:', ex)
+        if matches_dip:
+            print(split_sets_into_reps(ex))
+        elif matches_pullup:
+            print(split_sets_into_reps(ex))
+    print("-----------------------------------------------")
+# insert_WorkoutComment(date, place)
+# print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
 
     
-conn.close()
+# conn.close()
