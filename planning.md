@@ -108,8 +108,8 @@ values(100,{date},{reps},{weight});
 ```
 ### Handstand
 ```sql
-insert into training_log (exercise_id,date,reps,metric_weight)
-values(111,{date},{reps},{time});
+insert into training_log (exercise_id,date,duration_seconds)
+values(111,{date},{time});
 ```
 
 ## cleaning data
