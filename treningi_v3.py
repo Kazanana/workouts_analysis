@@ -116,37 +116,14 @@ for entry in exercise_entries:
     print(date_and_place)
     # insert insert_WorkoutComment(data, place)
     for ex in exercises:
-        matches_ChestDip = re.findall(r'dip:|Dip:|dipy:|Dipy:', ex)
-        matches_PullUp = re.findall(r'Pull up:|pull up:', ex)
-        matches_HS_PU = re.findall(r'(?!.*ściana)(Hs|HS) (pu|push up|Pu)', ex)
-        matches_HS_PU_Wall = re.findall(r'(Hs|HS) (pu|push up|Pu).*ściana', ex)
-        matches_MuscleUp = re.findall(r'Muscle up', ex)
-        matches_ChinUp = re.findall(r'Chin up', ex)
-        matches_BarbellSquat = re.findall(r'Przysiad', ex)
-        matches_NeutralChinUp = re.findall(r'Neutral', ex)
-        matches_HS = re.findall(r'(?!.*:).*hs.*|(?!.*:).*HS.*|(?!.*:).*Hs.*', ex)
-
-        if matches_ChestDip:
-            print(split_sets_into_reps(ex))
-        elif matches_PullUp:
-            print(split_sets_into_reps(ex))
-        elif matches_HS_PU:
-            print(split_sets_into_reps(ex))
-        elif matches_HS_PU_Wall:
-            print(split_sets_into_reps(ex))
-        elif matches_MuscleUp:
-            print(split_sets_into_reps(ex))
-        elif matches_ChinUp:
-            print(split_sets_into_reps(ex))
-        elif matches_BarbellSquat:
-            print(split_sets_into_reps(ex))
-        elif matches_NeutralChinUp:
-            print(split_sets_into_reps(ex))
-        elif matches_HS:
-            print("HANDSTAND PRACTICE")
-        else:
-            continue
-
+        for i in exercise_dict["exercises"]:
+            if re.findall(i["regex"],ex):
+                if i["name"] == "Handstand":
+                    print("HANDSTAND PRACTICE")
+                else:
+                    print(split_sets_into_reps(ex))
+            else:
+                continue
     print("-----------------------------------------------")
 # insert_WorkoutComment(date, place)
 # print(f"PLACE: {date_and_place}\n ENTRIES: {exercises}")
