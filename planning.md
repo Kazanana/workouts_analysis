@@ -115,7 +115,7 @@ values(111,{date},{time});
 ## cleaning data
 For handstand when there is hs in line without ":" then count it as handstand
 
-    for each HS assume 1 minute
+    for each HS assume 2 sets 30 sec
 
 HS push up or HS pu for Handstand Pushup
 

@@ -38,7 +38,8 @@ def insert_training_log(exercise_name,date,reps,weight, dry_run = True):
         data = (exercise_id, date, reps, weight)
         cursor.execute(query, data)
         conn.commit()
-
+        
+# time exercises require different insert
 def insert_training_log_time(exercise_name, date, duration_seconds, dry_run = True):
     if dry_run:
             query = "INSERT INTO training_log (exercise_id,date,duration_seconds) VALUES(?,?,?);"
@@ -130,7 +131,7 @@ for entry in exercise_entries:
     for ex in exercises:
         for i in exercise_dict["exercises"]:
             if re.findall(i["regex"],ex):
-                # didnt record duration, time exercises require different insert
+                # didnt record duration I assume every time 2 set 30 sec
                 if i["name"] == "Handstand":
                     insert_training_log_time(i["name"], date, 30)
                     insert_training_log_time(i["name"], date, 30)
