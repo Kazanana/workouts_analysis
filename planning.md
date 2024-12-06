@@ -113,8 +113,14 @@ values(111,{date},{reps},{time});
 ```
 
 ## cleaning data
-For handstand when there is hs i line without : then count it as handstand
-HS push up or HS up for Handstand Pushup
+For handstand when there is hs in line without ":" then count it as handstand
+
+    for each HS assume 1 minute
+
+HS push up or HS pu for Handstand Pushup
+
 ściana for Handstand Pushup Wall
+
 dip dipy Dipy Dip for Chest Dips
+
 Przysiad for Barbell Squat
