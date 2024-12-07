@@ -14,6 +14,10 @@ Not convert them into database but make inserts into backup file.
 2. Based on 1. convert 1 workout from old notes into a series of inserts
 3. Do it in a loop for every workout in the old notes
 4. Test if updated DB file works in the App
+First test done.
+1. Some entries are doubled check why (25.10.2024)
+2. Add default exercise to days when there are none(Default Exercise)
+3. Add climbing to entries with crux murall or obiekto 
 
 ## DB analysis
 training_log table has all exersizes. Columns:
