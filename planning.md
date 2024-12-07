@@ -18,6 +18,8 @@ First test done.
 1. Some entries are doubled check why (25.10.2024)
 2. Add default exercise to days when there are none(Default Exercise)
 3. Add climbing to entries with crux murall or obiekto 
+Second test done, looks fine
+1. Write README
 
 ## DB analysis
 training_log table has all exersizes. Columns:
