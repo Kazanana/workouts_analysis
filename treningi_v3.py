@@ -35,7 +35,7 @@ def update_workouts_DB(global_dry_run = True):
             exercise_id = cursor.fetchall()[0][0]
             # print(type(exercise_id[0][0])) -> int
             query = "INSERT INTO training_log (exercise_id,date,reps,metric_weight) VALUES(?,?,?,?);"
-            data = (exercise_name, date, reps, weight)
+            data = (exercise_id, date, reps, weight)
             return (query, data)
         
         if dry_run:
@@ -55,7 +55,7 @@ def update_workouts_DB(global_dry_run = True):
             exercise_id = cursor.fetchall()[0][0]
             # print(type(exercise_id[0][0])) -> int
             query = "INSERT INTO training_log (exercise_id,date,duration_seconds,metric_weight,reps) VALUES(?,?,?,?,?);"
-            data = (exercise_name, date, duration_seconds, 0, 0)
+            data = (exercise_id, date, duration_seconds, 0, 0)
             return (query, data)
         
         if dry_run:
