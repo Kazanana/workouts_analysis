@@ -146,7 +146,7 @@ def update_workouts_DB(global_dry_run = True):
         date = datetime.strptime(date, "%d-%m-%Y").strftime("%Y-%m-%d")
 
         place = date_and_place.split(' ', 1)[1]
-        insert_WorkoutComment(date, place, dry_run = True)
+        insert_WorkoutComment(date, place, dry_run = global_dry_run)
 
         # not in gyms and exercise
             # proceed with loop
@@ -168,9 +168,12 @@ def update_workouts_DB(global_dry_run = True):
             if place in climbing_gyms:
                 climbing_flag += 1
                 insert_training_log_time("Default Climbing", date, 5400, global_dry_run)
+            elif place == "siatka": 
+                insert_training_log_time("Volleyball", date, 7200, global_dry_run)
             else: 
                 insert_training_log_time("Default Exercise", date, 2700, global_dry_run)
-            print("-----------------------------------------------")
+
+            print(f"------------------------------------------------{date_and_place}")
             continue
 
         if place in climbing_gyms:
@@ -194,9 +197,10 @@ def update_workouts_DB(global_dry_run = True):
                     continue
         if exercise_flag == 0 and climbing_flag == 0:
             insert_training_log_time("Default Exercise", date, 2700, global_dry_run)
-        print("-----------------------------------------------")
+
+        print(f"------------------------------------------------{date_and_place}")
 
     conn.close()
 
 if __name__ == '__main__':
-    update_workouts_DB(global_dry_run = True)
+    update_workouts_DB(global_dry_run = False)
