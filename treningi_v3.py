@@ -183,6 +183,7 @@ def update_workouts_DB(global_dry_run = True):
         for ex in exercises:
             for i in exercise_dict["exercises"]:
                 if re.findall(i["regex"],ex):
+
                     exercise_flag +=1
                     # didnt record duration I assume every time 2 set 30 sec
                     if i["name"] == "Handstand":
@@ -203,4 +204,4 @@ def update_workouts_DB(global_dry_run = True):
     conn.close()
 
 if __name__ == '__main__':
-    update_workouts_DB(global_dry_run = False)
+    update_workouts_DB(global_dry_run = True)
